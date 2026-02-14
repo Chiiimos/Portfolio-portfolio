@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thweyrhone Gallego | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="Melriclogo.png"> 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="Melriclogo.png" alt="Chi_logo" class="logo">
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#Contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <Section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm Thweyrhone Melric N. Gallego</h1>
+                <p>A passionate frontend developer specializing in modern responsive web design</p>
+                <a href="#projects" class="btn">My Projects</a>
+            </div>
+        </div>
+    </Section>
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About me</h2>
+            <div class="about-cont">
+                <div class="about-text">
+                    <p>Hello, I'm Thweyrhone, A junior developer with experiences towards HTML and CSS, I usually do more modern types of website</p>
+                    <p>My passion is creating intuitive user experiences with clean, efficient code. I enjoy solving complex problems and turning ideas into reality through web development.</p>
+                    <a href="#Contacts" class="btn">Get In Touch</a>
+                </div>
+                <div class="me-image">
+                    <img src="MELRICPIC.jpg" alt="Pogi mel">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <a href="https://product-page-olive-two.vercel.app" target="_blank"><img src="Color_Pro_product.png" alt="Product-page"></a>
+                            </div>
+                            <div class="project-info">
+                                <h3>Product Page</h3>
+                                <p>A polished product landing page designed to present item details with clarity and focus. The project reflects effective use of layout, visual hierarchy, and call-to-action placement suitable for showcasing products in a modern web environment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <a href="https://tribute-pi-liard.vercel.app" target="_blank"><img src="TRIBUTE.png" alt="Pogipapa"></a>
+                            </div>
+                            <div class="project-info">
+                                <h3>Tribute Page</h3>
+                                <p>A clean and professionally presented tribute page emphasizing balanced layout, structured content, and refined typography. It demonstrates the ability to build simple, informative, and visually coherent single-page websites.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <a href="https://technical-documentation-page-alpha-three.vercel.app" target="_blank"><img src="Docspage.png" alt="Dcospage"></a>  
+                            </div>
+                            <div class="project-info">
+                                <h3>Documentation Page</h3>
+                                <p>A well-organized technical documentation page featuring a fixed navigation panel and clearly segmented content sections. This project highlights strong layout planning, readability-focused design, and an approach aligned with industry documentation standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <a href="https://survey-red-tau.vercel.app/" target="_blank"><img src="Survey.png" alt="Survey Page"></a>
+                            </div>
+                            <div class="project-info">
+                                <h3>Survey Page</h3>
+                                <p>A structured and responsive survey interface designed to collect user input efficiently. The project demonstrates clear form organization, consistent styling, and a streamlined user experience suitable for feedback or data-gathering applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="prev" aria-label="Previous project">‹</button>
+                <button class="next" aria-label="Next project">›</button>
+            </div>
+        </div>
+    </section>
+    <section id="Contacts"> 
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-info">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="Message" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.instagram.com/chi.studios_/"><i class="fab fa-linkedin"><img src="images-removebg-preview.png" alt="IG" class="social-img"></i></a>
+                <a href="https://www.linkedin.com/in/chi-studios-644728209/"><i class="fab fa-instagram"><img src="channels4_profile.jpg" alt="LINKIN" class="social-img"></i></a>
+            </div>
+            <p>&copy;Thweyrhone Gallego. All rights reserved.</p>
+        </div>
+    </footer>
+    <a href="#hero" class="back-to-top">↑</a>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                if (targetId === '#hero') {
+                    // Scroll to top for back-to-top button
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                    return;
+                }
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Slider functionality
+        const slides = document.querySelector('.slides');
+        const slideElements = document.querySelectorAll('.slide');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        let currentIndex = 0;
+        const totalSlides = slideElements.length;
+
+        function updateSlider() {
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlider();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextBtn.click();
+            if (e.key === 'ArrowLeft') prevBtn.click();
+        });
+
+        // Auto-slide (optional: remove if not wanted)
+        setInterval(() => {
+            nextBtn.click();
+        }, 5000); // Change slide every 5 seconds
+    </script>
+</body>
+</html>
